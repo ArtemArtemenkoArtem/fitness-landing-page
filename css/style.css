@@ -455,9 +455,9 @@ h6 {
     height: 100%;
     background-color: white;
     padding: 124px 0px 0px 0px;
-    -webkit-transition: left 3s ease 0;
-    -o-transition: left 3s ease 0;
-    transition: left 3s ease 0;
+    -webkit-transition-duration: 0.5s;
+         -o-transition-duration: 0.5s;
+            transition-duration: 0.5s;
     overflow: auto;
   }
 
