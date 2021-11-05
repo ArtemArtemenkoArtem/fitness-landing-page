@@ -326,7 +326,6 @@ h6 {
 /* <HOME>======================================================================================================= */
 
 .home__container {
-  outline: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -417,9 +416,116 @@ h6 {
 
 /* <HOME>======================================================================================================= */
 
-.fitness-activity {
-  padding: 40px 0px 40px 0px;
+/* <fitness-activity>============================================================================================= */
+
+.fitness-activity__container {
+  padding: 0 10.5% 6.4% 10.5%;
+  background: url(..//img/main/fitness-activity/bg.svg) no-repeat;
+  background-size: cover;
+  margin: 3.5% 0px 0px 0px;
 }
+
+.fitness-activity__title {
+  font-weight: 600;
+  font-size: 68px;
+  line-height: 100%;
+  color: #4e7d96;
+  text-align: center;
+  margin: 0px 0px 3.8% 0px;
+}
+
+.fitness-activity__title span {
+  opacity: 50%;
+}
+
+.cards__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 552px;
+}
+
+.cards__btn {
+  width: 150px;
+  height: 45px;
+  margin: 0px 0px -22.5px 0px;
+}
+
+.cards__btn a {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 124.5%;
+  color: #ffffff;
+}
+
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 30px 0px 30px;
+  max-width: 300px;
+  height: 372px;
+  background: #f1f6fa;
+  -webkit-box-shadow: 0px 8px 25px #d9e8f4;
+          box-shadow: 0px 8px 25px #d9e8f4;
+  border-radius: 8px;
+}
+
+.item:nth-child(2),
+.item:nth-child(4) {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.item__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item__img {
+  margin: 0px 0px 10px 0px;
+}
+
+.item__name {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 124.5%;
+  color: #4e7d96;
+  margin: 0px 0px 25px 0px;
+}
+
+.item__text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 124.5%;
+  text-align: center;
+  color: #4e7d96;
+}
+
+/* <fitness-activity END>============================================================================================= */
 
 .classes {
   padding: 40px 0px 40px 0px;
@@ -433,6 +539,13 @@ h6 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media (max-width: 1801px) {
+  .fitness-activity__container {
+    padding: 0 3% 6.4% 3%;
+    background: none;
   }
 }
 
@@ -488,6 +601,52 @@ h6 {
   }
 }
 
+@media (max-width: 1445px) {
+  .cards__list {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    height: 100%;
+  }
+
+  .cards__btn {
+    width: 280px;
+    height: 85px;
+    margin: 0px 0px -42.5px 0px;
+  }
+
+  .cards__btn a {
+    font-size: 30px;
+  }
+
+  .item {
+    height: 530px;
+    max-width: 500px;
+  }
+
+  .item:nth-child(2),
+  .item:nth-child(4) {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+
+  .item:nth-child(3),
+  .item:nth-child(4) {
+    margin: 8% 0px 0px 0px;
+  }
+
+  .item__text {
+    font-size: 22px;
+    padding: 0px 20% 0px 20%;
+  }
+}
+
+@media (max-width: 1292px) {
+  .item {
+    max-width: 450px;
+  }
+}
+
 @media (max-width: 1255px) {
   .text {
     width: 437px;
@@ -530,6 +689,14 @@ h6 {
   }
 }
 
+@media (max-width: 1138px) {
+  .cards__list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 @media (max-width: 1132px) {
   .page {
     margin: 145px 0px 0px 0px;
@@ -558,6 +725,37 @@ h6 {
 
   .text__btn a {
     font-size: 25px;
+  }
+}
+
+@media (max-width: 1036px) {
+  .cards__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .item {
+    max-width: 700px;
+  }
+
+  .item:nth-child(1),
+  .item:nth-child(2),
+  .item:nth-child(3) {
+    margin: 0px 0px 20% 0px;
+  }
+
+  .item:nth-child(4) {
+    margin: 0;
+  }
+
+  .item__img {
+    width: 200px;
+  }
+
+  .item__img img {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -708,6 +906,29 @@ h6 {
 
   .menu__link {
     font-size: 35px;
+  }
+
+  .fitness-activity__container {
+    padding: 0;
+  }
+
+  .fitness-activity__title {
+    margin: 0px 0px 80px 0px;
+  }
+
+  .cards__list {
+    width: 100%;
+  }
+
+  .item {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 664px) {
+  .item__text {
+    font-size: 18px;
+    padding: 0px 5% 0px 5%;
   }
 }
 
