@@ -738,8 +738,17 @@ h6 {
             justify-content: space-between;
   }
 
+  .progress__adv {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+
   .progress__time {
     margin: 15px 0px 0px 0px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 }
 
