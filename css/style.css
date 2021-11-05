@@ -117,6 +117,9 @@ h6 {
 }
 */
 
+._no-webp ._bg{
+  background: url(..//img/body/bg.png) no-repeat; }
+
 .wrapper {
   min-height: 100%;
   overflow: hidden;
@@ -171,6 +174,37 @@ h6 {
   color: #4e7d96;
 }
 
+._btn-actH {
+  background: -webkit-gradient(linear, left top, left bottom, from(#4e7d96), to(#396d89));
+  background: -o-linear-gradient(top, #4e7d96 0%, #396d89 100%);
+  background: linear-gradient(180deg, #4e7d96 0%, #396d89 100%);
+  -webkit-box-shadow: 0px 23px 58px rgba(57, 109, 137, 0.15);
+          box-shadow: 0px 23px 58px rgba(57, 109, 137, 0.15);
+  border-radius: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition-duration: -500ms;
+       -o-transition-duration: -500ms;
+          transition-duration: -500ms;
+}
+
+._btn-actH a {
+  font-size: 32px;
+  line-height: 124.5%;
+  color: #ffffff;
+}
+
+._btn-actH a:hover {
+  font-size: 32px;
+}
+
 ._btn-act {
   background: -webkit-gradient(linear, left top, left bottom, from(#4e7d96), to(#396d89));
   background: -o-linear-gradient(top, #4e7d96 0%, #396d89 100%);
@@ -192,16 +226,6 @@ h6 {
           transition-duration: -500ms;
 }
 
-._btn-act a {
-  font-size: 32px;
-  line-height: 124.5%;
-  color: #ffffff;
-}
-
-._btn-act a:hover {
-  font-size: 32px;
-}
-
 /* <HEADER>================================================================================================================================== */
 
 .header {
@@ -218,7 +242,7 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0px 2.5% 0px 5%;
+  padding: 0px 4% 0px 4%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -294,28 +318,111 @@ h6 {
 }
 
 .menu__link:hover {
-  font-size: 32px;
-}
-
-.menu__link:hover {
-  font-size: 26px;
+  font-size: 42px;
 }
 
 /* <HEADER END>================================================================================================================================== */
 
-.about {
-  padding: 40px 0px 40px 0px;
-  background-color: yellowgreen;
+/* <HOME>======================================================================================================= */
+
+.home__container {
+  outline: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 100px;
 }
+
+.home__img-right {
+  width: 992px;
+}
+
+.home__img-right img {
+  width: 100%;
+  height: 100%;
+}
+
+.text {
+  width: 837px;
+}
+
+.text__title {
+  font-weight: 600;
+  font-size: 68px;
+  line-height: 100%;
+  color: #ffffff;
+  margin: 0px 0px 22px 0px;
+}
+
+.text__description {
+  width: 638px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 124.5%;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0px 0px 25px 0px;
+}
+
+.text__btn {
+  width: 350px;
+  height: 85px;
+}
+
+.text__btn a {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 124.5%;
+  color: #ffffff;
+}
+
+.progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 0px 30px 0px;
+}
+
+.progress__adv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 40px 0px 0px;
+}
+
+.progress__text {
+  margin: 0px 0px 0px 20px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 124.5%;
+  color: #ffffff;
+}
+
+.progress__time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* <HOME>======================================================================================================= */
 
 .fitness-activity {
   padding: 40px 0px 40px 0px;
-  background-color: cornflowerblue;
 }
 
 .classes {
   padding: 40px 0px 40px 0px;
-  background-color: burlywood;
 }
 
 @media (min-width: 767px) {
@@ -334,12 +441,12 @@ h6 {
     margin: 124px 0px 0px 0px;
   }
 
-  ._btn-act a {
+  ._btn-actH a {
     font-size: 22px;
     line-height: 100%;
   }
 
-  ._btn-act a:hover {
+  ._btn-actH a:hover {
     font-size: 22px;
   }
 
@@ -362,9 +469,76 @@ h6 {
     font-size: 22px;
     line-height: 100%;
   }
+
+  .menu__link:hover {
+    font-size: 26px;
+  }
+
+  .text__title {
+    font-size: 48px;
+  }
+
+  .text__btn {
+    width: 250px;
+    height: 65px;
+  }
+
+  .text__btn a {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 1255px) {
+  .text {
+    width: 437px;
+  }
+
+  .text__title {
+    font-size: 38px;
+  }
+
+  .text__description {
+    width: 497px;
+  }
+
+  .progress__text {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 1193px) {
+  .text__title {
+    font-size: 28px;
+  }
+
+  .text__title {
+    font-size: 38px;
+  }
+
+  .text__description {
+    font-size: 18px;
+    width: 427px;
+  }
+
+  .text__btn {
+    width: 200px;
+    height: 55px;
+  }
+
+  .text__btn a {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 1132px) {
+  .page {
+    margin: 145px 0px 0px 0px;
+  }
+
+  .header__container {
+    height: 145px;
+  }
+
   .menu__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -376,12 +550,42 @@ h6 {
   }
 }
 
+@media (max-width: 1108px) {
+  .text__btn {
+    width: 230px;
+    height: 65px;
+  }
+
+  .text__btn a {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1008px) {
+  .home__container {
+    padding: 40px 40px 40px 40px;
+  }
+
+  .home__img-right {
+    display: none;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .text__description {
+    font-size: 23px;
+    width: 100%;
+  }
+}
+
 @media (max-width: 767px) {
-  ._btn-act {
+  ._btn-actH {
     border-radius: 0;
   }
 
-  ._btn-act a {
+  ._btn-actH a {
     font-size: 42px;
   }
 
@@ -506,3 +710,37 @@ h6 {
     font-size: 35px;
   }
 }
+
+@media (max-width: 480px) {
+  .home__container {
+    padding: 20px 20px 20px 20px;
+  }
+
+  .text__btn {
+    width: 100%;
+    height: 85px;
+  }
+
+  .text__btn a {
+    font-size: 30px;
+  }
+
+  .progress {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .progress__time {
+    margin: 15px 0px 0px 0px;
+  }
+}
+
+._webp ._bg{ background: url(..//img/body/bg.webp) no-repeat; }

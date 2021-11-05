@@ -21,6 +21,26 @@ $(document).ready(function() {
 
 /* <МЕНЮ>============================================================================================================ */
 
+// Активная ссылка
+
+var selector, elems, makeActive;
+
+selector = '.menu__list li';
+
+elems = document.querySelectorAll(selector);
+
+makeActive = function () {
+    for (var i = 0; i < elems.length; i++)
+        elems[i].classList.remove('_btn-actH');
+
+    this.classList.add('_btn-actH');
+};
+
+for (var i = 0; i < elems.length; i++)
+    elems[i].addEventListener('mousedown', makeActive);
+
+    /* <БУРГЕР> */
+
 // Меню бургер
 const iconMenu = document.querySelector('.menu__icon');
 const menuBody = document.querySelector('.menu__body');
@@ -60,4 +80,6 @@ if (menuLinks.length > 0) {
 		}
 	}
 }
+
+
 /* <МЕНЮ END>============================================================================================================ */
