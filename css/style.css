@@ -224,6 +224,7 @@ h6 {
   -webkit-transition-duration: -500ms;
        -o-transition-duration: -500ms;
           transition-duration: -500ms;
+  color: #ffffff;
 }
 
 /* <HEADER>================================================================================================================================== */
@@ -527,9 +528,88 @@ h6 {
 
 /* <fitness-activity END>============================================================================================= */
 
-.classes {
-  padding: 40px 0px 40px 0px;
+/* <work-out>============================================================================================================ */
+
+.work-out__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 0px 0px 5.2%;
 }
+
+.work-out__text {
+  width: 37%;
+  padding: 0px 2% 0px 0px;
+}
+
+.work-out__title {
+  font-weight: 600;
+  font-size: 68px;
+  line-height: 100%;
+  color: #4e7d96;
+  margin: 0px 0px 22px 0px;
+}
+
+.work-out__title span {
+  opacity: 50%;
+}
+
+.work-out__description {
+  margin: 0px 0px 30px 0px;
+}
+
+.work-out__description p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 124.5%;
+  color: rgba(78, 125, 150, 0.7);
+}
+
+.work-out__description p:nth-child(1) {
+  margin: 0px 0px 7px 0px;
+}
+
+.work-out__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.work-out__btns button {
+  width: 290px;
+  height: 85px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 124.5%;
+}
+
+.work-out__btns button:nth-child(2) {
+  color: #4e7d96;
+  -webkit-filter: drop-shadow(0px 23px 58px rgba(57, 109, 137, 0.15));
+          filter: drop-shadow(0px 23px 58px rgba(57, 109, 137, 0.15));
+  border-radius: 45px;
+  border: 4px solid #4e7d96;
+  margin: 0px 0px 0px 25px;
+}
+
+.work-out__right-img {
+  overflow: hidden;
+}
+
+.work-out__right-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* <work-out END>============================================================================================================ */
 
 @media (min-width: 767px) {
   .menu__list {
@@ -546,6 +626,14 @@ h6 {
   .fitness-activity__container {
     padding: 0 3% 6.4% 3%;
     background: none;
+  }
+}
+
+@media (max-width: 1728px) {
+  .work-out__btns button {
+    width: 220px;
+    height: 65px;
+    font-size: 20px;
   }
 }
 
@@ -598,6 +686,16 @@ h6 {
 
   .text__btn a {
     font-size: 26px;
+  }
+}
+
+@media (max-width: 1487px) {
+  .work-out__title {
+    font-size: 52px;
+  }
+
+  .work-out__title br {
+    display: none;
   }
 }
 
@@ -662,6 +760,21 @@ h6 {
 
   .progress__text {
     font-size: 26px;
+  }
+}
+
+@media (max-width: 1209px) {
+  .work-out__container {
+    padding: 0px 5.2% 0px 5.2%;
+  }
+
+  .work-out__text {
+    width: 100%;
+    margin: 5% 0px 0px 0px;
+  }
+
+  .work-out__right-img {
+    display: none;
   }
 }
 
@@ -923,6 +1036,10 @@ h6 {
   .item {
     max-width: 100%;
   }
+
+  .work-out__container {
+    margin: 10% 0px 0px 0px;
+  }
 }
 
 @media (max-width: 664px) {
@@ -970,6 +1087,35 @@ h6 {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+  }
+}
+
+@media (max-width: 472px) {
+  .work-out__btns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .work-out__btns button {
+    width: 100%;
+  }
+
+  .work-out__btns button:nth-child(2) {
+    margin: 4% 0px 0px 0px;
+  }
+}
+
+@media (max-width: 418px) {
+  .work-out__container {
+    margin: 20% 0px 0px 0px;
+  }
+}
+
+@media (max-width: 393px) {
+  .work-out__title {
+    font-size: 42px;
   }
 }
 
